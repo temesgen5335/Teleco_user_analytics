@@ -1,7 +1,7 @@
 import psycopg2
 import sys,os
 
-from data.db_connection import db_connection_pool
+from data_preparation.db_connection import db_connection_pool
 
 #loading data for user overview analysis section
 

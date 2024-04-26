@@ -1,0 +1,14 @@
+FROM python:3.12.0
+
+#set working directory inside the container
+WORKDIR /Teleco_user_analytics
+
+#command to run the application
+CMD [ "streamlit", "run", "app/app.py" ]
+
+#install dependancies specified in req.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+#copy the contents of this current directory in to the container
+
+COPY . /Teleco_user_analytics
